@@ -1,0 +1,36 @@
+passive open
+SYN
+close
+ACK
+FIN
+onCLOSED
+passive open
+SYN
+ACK
+close
+FIN,ACK
+onCLOSED
+passive open
+SYN
+ACK
+close
+FIN
+ACK
+onCLOSED
+active open
+SYN
+ACK
+FIN
+close
+ACK
+onCLOSED
+active open
+SYN,ACK
+FIN
+close
+ACK
+onCLOSED
+active open
+close
+onCLOSED
+quit

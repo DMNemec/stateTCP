@@ -1,0 +1,12 @@
+passive open
+SYN
+ACK
+FIN
+TEST
+INVALID
+SYN
+passive open
+asdfas
+close
+ACK
+quit

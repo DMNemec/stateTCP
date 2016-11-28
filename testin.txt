@@ -1,0 +1,8 @@
+passive open
+active open
+SYY
+SYN
+close
+ACK
+FIN
+quit
