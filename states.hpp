@@ -82,6 +82,14 @@ States synSentSel(Message input){
                            std::cout << "Current state is ESTABLISHED\n\n";
                            return ESTABLISHED;
                            break;}
+      case SYN          : {std::cout << "send: SYN,ACK\n";
+                           std::cout << "Current state is SYN_RCVD\n\n";
+                           return SYN_RCVD;
+                           break;}
+      case close        : {std::cout << "send: <nothing>\n";
+                           std::cout << "Current state is CLOSED\n\n";
+                           return CLOSED;
+                           break;}
       default           : {std::cout << "Invalid\n";
                            std::cout << "Current state is SYN_SENT\n\n";
                            return SYN_SENT;
@@ -114,9 +122,12 @@ States finWait1Sel(Message input){
                            break;}
       case FINACK       : {std::cout << "send: ACK\n";
                            std::cout << "Current state is TIME_WAIT\n";
-                           std::cout << "Current state is CLOSED\n";
+                           std::cout << "Current state is CLOSED\n\n";
                            return CLOSED;
                            break;}
+      case FIN          : {std::cout << "send: ACK\n";
+                           std::cout << "Current state is CLOSING\n\n";
+                           return CLOSING;}
       default           : {std::cout << "Invalid\n";
                            std::cout << "Current state is FIN_WAIT_1\n\n";
                            return FIN_WAIT_1;

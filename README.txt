@@ -12,6 +12,7 @@ Inventory:
   in1.txt --smaller test program with invalid input
   in2.txt --large test program that checks all valid paths
   testin.txt --something you included
+  README.txt --this file
 
 Instructions for Compiling:
   $> g++ Project4.cpp -std=C++14 -o stateTCP
